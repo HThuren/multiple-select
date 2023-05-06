@@ -7,6 +7,27 @@
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
 
 /**
+ * Multiple Select cz-CS translation
+ * Author: Matej Puhony<info@puhony.eu>
+ */
+
+$.fn.multipleSelect.locales['cz-CS'] = {
+  formatSelectAll () {
+    return '[Vybrat vše]'
+  },
+  formatAllSelected () {
+    return 'Vše vybráno'
+  },
+  formatCountSelected (count, total) {
+    return count + ' z ' + total + ' vybráno'
+  },
+  formatNoMatchesFound () {
+    return 'Nebylo nalezeno'
+  }
+}
+$.extend($.fn.multipleSelect.defaults, $.fn.multipleSelect.locales['cz-CS'])
+
+/**
  * Multiple Select da-DK translation
  * Author: HThuren<thuren.henrik@gmail.com>
  */
@@ -110,6 +131,27 @@ $.extend($.fn.multipleSelect.defaults, $.fn.multipleSelect.locales['hu-HU'])
     }
   };
   $.extend($.fn.multipleSelect.defaults, $.fn.multipleSelect.locales['it-IT']);
+
+  /**
+ * Multiple Select pt-BR translation
+ * Author: Lucas Aguiar<lucas99.abreu@gmail.com>
+ */
+
+$.fn.multipleSelect.locales['pt-BR'] = {
+  formatSelectAll () {
+    return '[Selecionar todos]'
+  },
+  formatAllSelected () {
+    return 'Todos selecionados'
+  },
+  formatCountSelected (count, total) {
+    return count + ' de ' + total + ' selecionado(s)';
+  },
+  formatNoMatchesFound () {
+    return 'Nenhum resultado encontrado'
+  }
+}
+$.extend($.fn.multipleSelect.defaults, $.fn.multipleSelect.locales['pt-BR'])
 
 /**
  * Multiple Select ru-RU translation
